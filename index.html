@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Интернет магазин</title>
+        <link rel="stylesheet" type="text/css" href="vendors/jquery.bxslider/jquery.bxslider.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="vendors/jquery.bxslider/jquery.bxslider.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider({
+                  maxSlides: 1
+                });
+
+                $('.bxslider_popular_goods').bxSlider({
+                    minSlides: 1,
+                    maxSlides: 5,
+                    slideWidth: 250,
+                    slideMargin: 10
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <!-- Шапка сайта -->
+            <header>
+                <!-- Верх шапки -->
+                <div class="top-header clearfix">
+                    <nav>
+                        <ul class="main-nav">
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Почему мы</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Полезные статьи</a></li>
+                            <li><a href="#">Компьютерная помощь</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="registration-unit">
+                        <li><a href="">Вход</a></li>
+                        <li><a href="">Регистрация</a></li>
+                    </ul>
+                </div>
+                <!-- Середина шапки -->
+                <div class="middle-header clearfix">
+
+                    <div class="block-logo">
+                        <img src="images/logo.png" alt="Логотип компании">
+                    </div>
+
+                    <div class="wrapp-select-number alignment">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+
+                        <select name="number" class="select-number">
+                            <option value="1">099-345-23-07</option>
+                            <option value="2">067-349-91-04</option>
+                            <option value="3">063-451-11-89</option>
+                            <option value="4">098-880-29-55</option>
+                        </select>
+
+                    </div>
+
+                    <div class="category-and-search alignment">
+                        <form action="">
+                            <div class="select-wrapp-category">
+
+                                <select name="category" class="select-category">
+                                    <option value="">По всем категориям</option>
+                                    <option value="">Ноутбуки</option>
+                                    <option value="">Планшеты</option>
+                                    <option value="">Телефоны</option>
+                                    <option value="">Аудиотехника</option>
+                                    <option value="">Видеотехника</option>
+                                    <option value="">Компьютерные комплектующие</option>
+                                    <option value="">Гаджеты</option>
+                                    <option value="">Бытовые товары</option>
+                                </select>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" name="search" placeholder="Поиск" class="search">
+                            <button>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="for-buyers alignment">
+                        <ul class="user-block">
+                            <li>
+                                <div class="icon"></div>
+                                <div>Желание</div>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <div>Сравнение</div>
+                            </li>
+                            <li class="other">
+                                <div class="icon"></div>
+                                <div>Другое</div>
+                                <div class="description">
+                                    <p>Nullam ut odio ullamcorper, dapibus erat in, vulputate libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas nec fermentum nunc. Quisque eu congue orci. Duis nec mauris eget ante tristique dignissim id vitae leo. Praesent sed hendrerit tortor. Donec auctor, quam quis fermentum aliquet, turpis nisl porta sem, sed tempus mi diam sollicitudin orci. Vivamus molestie urna eget odio egestas rutrum. Proin nec massa eget enim tristique eleifend. Quisque turpis felis, aliquet id tincidunt sit amet, varius et massa. Aliquam non metus at elit dapibus egestas vel non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id tortor at velit tristique tincidunt eu a turpis. Donec scelerisque velit sed tempor interdum. Donec rhoncus faucibus sodales.</p>
+                                    <button>Описание</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Низ шапки -->
+                <div class="bottom-header">
+                    <menu>
+                        <ul class="site-menu">
+                            <li><a href="#">Ноутбуки, компьютеры</a>
+                                <!-- Выпадающий список -->
+                                <div class="drop-down-list">
+                                    <div class="wrapp-drop-down-list">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Ноутбуки</a>
+                                                    <ul class="sub-list">
+                                                        <li><a href="#">Нетбуки</a></li>
+                                                        <li><a href="#">Для работы и учёбы</a></li>
+                                                        <li><a href="#">Для игр</a></li>
+                                                        <li><a href="#">Популярные</a></li>
+                                                        <li><a href="#" class="all-goods">Все ноутбуки</a></li>
+                                                    </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Компьютеры</a>
+                                                <ul class="sub-list">
+                                                    <li><a href="#">Для работы</a></li>
+                                                    <li><a href="#">Для учёбы</a></li>
+                                                    <li><a href="#">Игровые</a></li>
+                                                    <li><a href="#">Моноблоки</a></li>
+                                                    <li><a href="#" class="all-goods">Все компьютеры</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapp-drop-down-list">
+                                        <ul>
+                                            <li><a href="#">Программное обеспечение</a>
+                                                <div class="drop-down-list-goods">
+                                                    <ul>
+                                                        <li><a href="#">Антивирусы</a></li>
+                                                        <li><a href="#">Операционная система</a></li>
+                                                        <li><a href="#">Переводчики и словари</a></li>
+                                                        <li><a href="#">Офисные программы</a></li>
+                                                        <li><a href="#">Игры</a></li>
+                                                        <li><a href="#">Мультимедиа</a></li>
+                                                        <li><a href="#" class="all-goods">Всё програмное обеспечение</a></li>
+                                                    </ul>
+                                            </li>
+                                            <li><a href="#">Комплектующие</a>
+                                                <div class="drop-down-list-goods">
+                                                    <ul>
+                                                        <li><a href="#">Процессоры</a></li>
+                                                        <li><a href="#">Материнские платы</a></li>
+                                                        <li><a href="#">Жесткие диски</a></li>
+                                                        <li><a href="#">Видеокарты</a></li>
+                                                        <li><a href="#" class="all-goods">Все комплектующие</a></li>
+                                                    </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapp-drop-down-list">
+                                        <ul>
+                                            <li><a href="#">Аксессуары</a>
+                                                <div class="drop-down-list-goods">
+                                                    <ul>
+                                                        <li><a href="#">Мышка</a></li>
+                                                        <li><a href="#">Клавиатура</a></li>
+                                                        <li><a href="#">Веб-камера</a></li>
+                                                        <li><a href="#">Флешки</a></li>
+                                                        <li><a href="#" class="all-goods">Все аксессуары</a></li>
+                                                    </ul>
+                                            </li>
+                                            <li><a href="#">Переферия</a>
+                                                <div class="drop-down-list-goods">
+                                                    <ul>
+                                                        <li><a href="#">Принтеры</a></li>
+                                                        <li><a href="#">Сканеры</a></li>
+                                                        <li><a href="#">МФУ</a></li>
+                                                        <li><a href="#">Шредеры</a></li>
+                                                        <li><a href="#" class="all-goods">Вся переферия</a></li>
+                                                    </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapp-drop-down-list">
+                                        <ul>
+                                            <li><a href="#">Сетевое оборудование</a>
+                                                <ul>
+                                                    <li><a href="#">Роутер</a></li>
+                                                    <li><a href="#">Модемы</a></li>
+                                                    <li><a href="#">Антены</a></li>
+                                                    <li><a href="#">Усилители</a></li>
+                                                    <li><a href="#" class="all-goods">Всё оборудование</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Переферия</a>
+                                                <ul>
+                                                    <li><a href="#">Принтеры</a></li>
+                                                    <li><a href="#">Сканеры</a></li>
+                                                    <li><a href="#">МФУ</a></li>
+                                                    <li><a href="#">Шредеры</a></li>
+                                                    <li><a href="#" class="all-goods">Вся переферия</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Телефоны, планшеты, MP3, GPS</a></li>
+                            <li><a href="#">TV, аудио, видео, фото</a></li>
+                            <li><a href="#">TV, аудио, видео, фото</a></li>
+                            <li><a href="#">TV, аудио, видео, фото</a></li>
+                            <li><a href="#">TV, аудио, видео, фото</a></li>
+                            <li><a href="#">TV, аудио, видео, фото</a></li>
+                            <li><a href="#">TV, аудио, видео, фото</a></li>
+                        </ul>
+                    </menu>
+                </div>
+            </header>
+            <!-- Контент -->
+            <section class="clearfix">
+                <!-- Вставляем первый слайдер -->
+                <div class="slider">
+                    <ul class="bxslider">
+                        <li><img src="images/511639.png" alt=""></li>
+                        <li><img src="images/518860.png" alt=""></li>
+                        <li><img src="images/520302.png" alt=""></li>
+                        <li><img src="images/521393.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <h2>Популярные товары</h2>
+                    <!-- Табы товаров -->
+                    <div class="housing">
+                        <div class="korpus">
+                            <input type="radio" name="odin" checked="checked" id="vkl1"/>
+                            <label for="vkl1">Телефоны</label>
+                            <input type="radio" name="odin" id="vkl2"/>
+                            <label for="vkl2">Планшеты</label>
+                            <input type="radio" name="odin" id="vkl3"/>
+                            <label for="vkl3">Ноутбуки</label>
+
+                            <div class="clearfix">
+                            <!-- Вставляем слайдер с блоками товаров -->
+                                <ul class="bxslider_popular_goods">
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product">
+                                            <div class="block-img-product">
+                                                <img src="images/phone/copy_huawei_y5_ii_black_57b4251eb4a1f_images_1696700681.jpg" alt="" class="img-product">
+                                            </div>
+                                            <div class="product-describe">Смартфон и мобильный телефон Sony Xperia M5 Dual</div>
+                                            <div class="clearfix">
+                                                <div class="price">3357 грн</div>
+                                                <a href="#" class="buy">Купить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!-- Вставляем слайдер с блоками товаров -->
+                                <ul class="bxslider_popular_goods">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!-- Вставляем слайдер с блоками товаров -->
+                                <ul class="bxslider_popular_goods">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Подвал сайта -->
+        <footer>
+            <div class="wrapp clearfix">
+                <div>
+                    <h5>Помощь</h5>
+                    <ul>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Инфо</h5>
+                    <ul>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Инфо</h5>
+                    <ul>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Инфо</h5>
+                    <ul>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Инфо</h5>
+                    <ul>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                        <li><a href="#">Текст</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

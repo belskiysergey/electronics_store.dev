@@ -1,0 +1,292 @@
+// Стили для шапки
+
+// Стили верхнего блока шапки
+
+.top-header {
+    background-color: #00579c;
+    padding: 0px 20px;
+
+    ul {
+        display: flex;
+    }
+
+    a {
+        color: #ffffff;
+
+        &:hover {
+            color: rgb(247, 241, 218);
+        }
+    }
+
+    nav {
+        float: left;
+
+        .main-nav {
+
+            li {
+                margin: 0px 10px;
+            }
+        }
+    }
+
+    .registration-unit {
+        float: right;
+
+        li:first-child:after {
+            content: '/';
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #ffffff;
+        }
+    }
+}
+
+// Стили среднего блока шапки
+
+.middle-header {
+    padding-left: 20px;
+    background-color: #0277bd;
+
+    .block-logo,
+    .wrapp-select-number,
+    .category-and-search,
+    .for-buyers {
+        float: left;
+    }
+
+    .block-logo {
+        width: 100px;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .alignment {
+        transform: translateY(25px);
+    }
+
+    .wrapp-select-number {
+        .fa-phone {
+            position: absolute;
+            top: 7px;
+            left: 80px;
+            font-size: 16px;
+            z-index: 1;
+            color: #0277bd;
+        }
+
+        .select-number {
+            width: 250px;
+            height: 30px;
+            padding: 0 80px;
+            border: 0;
+            margin-left: 60px;
+            margin-right: 60px;
+            color: #0277bd;
+            position: relative;
+        }
+    }
+    .category-and-search {
+        .select-wrapp-category {
+            float: left;
+
+            .select-category {
+                width: 250px;
+                height: 30px;
+                padding: 0 25px;
+                border: 0;
+                color: #0277bd;
+            }
+
+            .fa-angle-down {
+                position: absolute;
+                left: 225px;
+                top: 6px;
+                font-size: 20px;
+                font-weight: normal;
+                color: #0277bd;
+            }
+
+        }
+
+        .search {
+            width: 500px;
+            height: 30px;
+            margin-left: 3px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            border: 0;
+        }
+
+        button {
+            background-color: #00589c;
+            border: 0;
+            width: 35px;
+            height: 30px;
+            color: #ffffff;
+            margin-left: -3px;
+        }
+    }
+
+    .for-buyers {
+        margin-left: 30px;
+        transform: translateY(17px);
+        float: right;
+
+        .user-block {
+            display: flex;
+
+            li {
+                text-align: -webkit-center;
+                margin-right: 20px;
+                font-size: 13px;
+                padding: 5px;
+                color: #ffffff;
+                position: relative;
+            }
+
+            .other {
+                position: relative;
+                &:hover {
+                    background-color: #ffffff;
+                    color: black;
+
+                    .description {
+                        top: 59px;
+                        display: block;
+                    }
+                }
+            }
+
+            .icon {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #b2b4b3;
+                margin-bottom: 3px;
+            }
+        }
+
+        .description {
+            width: 500px;
+            background-color: #ffffff;
+            color: #b2b4b3;
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+            padding: 5px;
+            font-size: 14px;
+            position: absolute;
+            top: -9999px;
+            display: none;
+            left: -260px;
+            z-index: 10;
+
+            transition: 0.5s opacity;
+
+
+        }
+    }
+}
+
+// Стили нижнего блока шапки
+
+.bottom-header {
+    menu {
+        .site-menu {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            border-bottom: 1px #d1d1d1 solid;
+            border-top: 1px #d1d1d1 solid;
+        }
+
+        .site-menu > li {
+            width: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-left: 1px #d1d1d1 solid;
+            text-align: center;
+            display: inherit;
+            border-bottom: 1px white solid;
+
+            &:last-child {
+                // border-right: 1px #d1d1d1 solid;
+            }
+
+            &:hover {
+                .drop-down-list {
+                    top: 58px;
+                    left: 0px;
+                    opacity: 1;
+                    width: 100%;
+                    background-color: white;
+                }
+
+                .drop-down-list li {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .site-menu li a {
+            color: #727272;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// Выпадающий список
+
+.drop-down-list {
+    position: absolute;
+    top: -9999px;
+    opacity: 0;
+    transition: 0.5s opacity;
+    z-index: 9999;
+    text-align: left;
+    padding: 20px;
+
+
+    li > a {
+        color: #154062;
+        font-weight: 700;
+    }
+
+    ul li:hover {
+        background-color: #d1d1d1;
+    }
+
+    .wrapp-drop-down-list {
+        float: left;
+        border-left: 1px #dadada solid;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        ul li > a {
+            color: #154062;
+        }
+
+
+
+        .sub-list {
+            margin-left: 20px;
+            margin-bottom: 15px;
+
+            a {
+                text-transform: none;
+                color: #494949;
+            }
+
+            .all-goods {
+                color: #154062;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
